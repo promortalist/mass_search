@@ -8,17 +8,6 @@ import urllib.request as urllib
 import time
 opt = Options()
 opt.headless = True
-#plik = open("prof2.html","r")
-#fragment = plik.readlines()
-#string_fr = str(fragment)
-regexpHandler = re.compile('<td class=" sorting_1">(.*?)</td>')
-#result = regexpHandler.findall(string_fr)
-#bandf = re.compile('<dt>Lyrical themes:</dt>\\\\n<dd>(.*?)</dd>')
-#genre_f = re.compile('<dt>Genre:</dt>\\\\n<dd>(.*?)</dd>')
-#extURL = re.compile('"(.*?)"')
-#regexBandName = re.compile('">(.*?)</a>')
-#max_counter = len(regexpHandler.findall(string_fr))
-#znalezione = open("filtered_bands.txt","w")
 driver = webdriver.Firefox(options=opt)
 #driver = webdriver.Firefox()
 driver.get("https://integro.ksiaznica.torun.pl/integro/catalog")
